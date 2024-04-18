@@ -1,0 +1,102 @@
+@media only screen and (min-width: 850px) {
+    .sidebar-container{
+        background: var(--primary);
+        height: calc(100vh - var(--xl));
+        border-radius: var(--s);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .opened{
+        width: 250px;
+    
+        .title{
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            padding-top: var(--lg);
+        }
+    
+        .sidebar-logo-container{
+            display: flex;
+            justify-content: center;
+    
+            .sidebar-logo{
+                margin-top: var(--xl);
+                margin-bottom: var(--md);
+                width: 50%;
+                border-radius: var(--xl);
+            }
+        }
+    
+        .sidebar-items{
+            display: flex;
+            flex-direction: column;
+            gap: var(--md);
+        }
+    
+        .sidenav-item{
+            display: flex;
+            flex-direction: row;
+            padding: var(--md) var(--lg);
+            margin-left: var(--md);
+            margin-right: var(--md);
+            align-items: center;
+            gap: 16px;
+            color: var(--text);
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .sidenav-item:hover, .active{
+            background-color: var(--background-hover);
+            border-radius: var(--s);
+            color: var(--text-hover);
+            font-size: 16px;
+        }
+    
+        .spacer{
+            flex-grow: 5;
+        }
+    }
+    
+    .closed{
+        width: 96px;
+    
+        .sidebar-items{
+            display: flex;
+            flex-direction: column;
+            gap: var(--md);
+            align-items: center;
+    
+            button:hover, button.active{
+                background-color: var(--background-hover);
+                color: var(--text-hover);
+                font-size: 16px;
+            }
+        }
+    
+        .top{
+            margin-top: var(--md);
+            margin-bottom: var(--xl);
+        }
+    }
+}
+
+@media only screen and (max-width: 849px) {
+    .sidebar-container{
+        background: var(--primary);
+        height: 64px;
+        border-radius: var(--s);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    button:hover, button.active{
+        background-color: var(--background-hover);
+        color: var(--text-hover);
+        font-size: 16px;
+    }
+}

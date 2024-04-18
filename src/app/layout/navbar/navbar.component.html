@@ -1,0 +1,30 @@
+<div class="navbar-container">
+    <span class="material-symbols-outlined avatar">
+        person
+    </span>
+
+    <p>Ciao Matteo!</p>
+
+    <div class="spacer">
+
+    </div>
+    @if(themeService.darkMode() == true){
+        <button (click)="changeTheme()" class="terziary">
+            <span class="material-symbols-outlined">
+                light_mode
+            </span>
+        </button>
+    }
+    @else {
+        <button (click)="changeTheme()" class="terziary">
+            <span class="material-symbols-outlined">
+                dark_mode
+            </span>
+        </button>
+    }
+    <button class="terziary">
+        <span class="material-symbols-outlined">
+            logout
+        </span>
+    </button>
+</div>

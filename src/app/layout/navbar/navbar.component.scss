@@ -1,0 +1,21 @@
+.navbar-container{
+    //background-color: var(--bg-lv2);
+    height: 64px;
+    border-radius: var(--s);
+    display: flex;
+    gap: var(--md);
+    flex-direction: row;
+    align-items: center;
+}
+
+.spacer{
+    flex-grow: 1
+}
+
+.avatar{
+    padding: 8px;
+    border-radius: 100px;
+    margin-left: 16px;
+    color: var(--text);
+    border: solid 2px var(--text);
+}

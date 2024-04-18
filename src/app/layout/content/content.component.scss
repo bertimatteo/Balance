@@ -1,0 +1,24 @@
+@media only screen and (min-width: 850px) {
+    .content-container{
+        //background-color: var(--bg-lv2);
+        height: calc(100dvh - 112px);
+        border-radius: var(--s);
+    }
+    
+    .content-wrapper{
+        max-height: 100%;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 849px) {
+    .content-container{
+        height: calc(100dvh - 192px);
+        border-radius: var(--s);
+    }
+    
+    .content-wrapper{
+        max-height: 100%;
+        overflow: auto;
+    }
+}
