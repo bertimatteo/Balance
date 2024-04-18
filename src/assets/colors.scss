@@ -1,0 +1,23 @@
+:root{
+    --bg-lv1: #121212;
+    --bg-lv2: #212121;
+    --bg-lv3: #535353;
+    --primary: #6CBC77;
+    --primary-grad: linear-gradient(0deg,#3B9772 0,#6CBC77 100%);
+    --text: #fff;
+    --background-hover: #f4f7fa;
+    --text-hover:#222E39;
+    --scroll: #b3b3b3;
+}
+
+[data-theme="light"]{
+    --bg-lv1: #E4E6E9;
+    --bg-lv2: #FFFFFF;
+    --bg-lv3: #535353;
+    --primary: #6CBC77;
+    --primary-grad: linear-gradient(0deg,#3B9772 0,#6CBC77 100%);
+    --text: #222E39;
+    --background-hover: #222E39;
+    --text-hover:#f4f7fa;
+    --scroll: #b3b3b3;
+}

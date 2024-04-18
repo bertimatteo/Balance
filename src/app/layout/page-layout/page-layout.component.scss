@@ -1,0 +1,28 @@
+// Large
+@media only screen and (min-width: 850px) {
+    .page-container{
+        padding: var(--md);
+        display: flex;
+        flex-direction: row;
+        gap: ar(--md);
+    }
+    
+    .grow{
+        flex-grow: 1;
+    } 
+}
+
+// Small
+@media only screen and (max-width: 849px) {
+	.page-container{
+        padding: ar(--md);
+        display: flex;
+        flex-direction: column-reverse;
+        gap: ar(--md);
+        
+    }
+    
+    .grow{
+        //flex-grow: 1;
+    } 
+}

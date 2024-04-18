@@ -1,1 +1,119 @@
-<p>sidebar works!</p>
+@if(!responsiveService.isTabletMode()){
+    @if(isOpen()){
+        <div class="sidebar-container opened">
+            <p class="title">Money Management</p>
+            <div class="sidebar-logo-container">
+                <img src="../../../../assets/image/logo.jpg" alt="" class="sidebar-logo">
+            </div>
+            <div class="sidebar-items">
+                <div class="sidenav-item" routerLink="overview" routerLinkActive="active">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    Home
+                </div>
+                <div class="sidenav-item" routerLink="bankAccount" routerLinkActive="active">
+                    <span class="material-symbols-outlined">
+                        account_balance
+                    </span>
+                    Conto corrente
+                </div>
+                <div class="sidenav-item" routerLink="investment" routerLinkActive="active">
+                    <span class="material-symbols-outlined">
+                        monitoring
+                    </span>
+                    Investimenti
+                </div>
+                <div class="sidenav-item" routerLink="balance" routerLinkActive="active">
+                    <span class="material-symbols-outlined">
+                        bar_chart
+                    </span>
+                    Spese
+                </div>
+            </div>
+            <div class="spacer">
+    
+            </div>
+            <div>
+                <button (click)="resizeNavbar()" class="terziary">
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </button>
+            </div>
+        </div>
+    }
+    @else {
+        <div class="sidebar-container closed">
+            <div class="sidebar-items">
+                <div class="sidenav-item top" routerLinkActive="active">
+                    <button (click)="resizeNavbar()" class="secondary">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                </div>
+                <div class="sidenav-item" routerLinkActive="active">
+                    <button class="secondary">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                    </button>
+                </div>
+                <div class="sidenav-item" routerLinkActive="active">
+                    <button class="secondary">
+                        <span class="material-symbols-outlined">
+                            account_balance
+                        </span>
+                    </button>
+                </div>
+                <div class="sidenav-item" routerLinkActive="active">
+                    <button class="secondary">
+                        <span class="material-symbols-outlined">
+                            monitoring
+                        </span>
+                    </button>
+                </div>
+                <div class="sidenav-item" routerLinkActive="active">
+                    <button class="secondary">
+                        <span class="material-symbols-outlined">
+                            bar_chart
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+}
+@else {
+    <div class="sidebar-container">
+        <div class="sidenav-item" routerLinkActive="active">
+            <button class="terziary">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+            </button>
+        </div>
+        <div class="sidenav-item" routerLinkActive="active">
+            <button class="terziary">
+                <span class="material-symbols-outlined">
+                    account_balance
+                </span>
+            </button>
+        </div>
+        <div class="sidenav-item" routerLinkActive="active">
+            <button class="terziary">
+                <span class="material-symbols-outlined">
+                    monitoring
+                </span>
+            </button>
+        </div>
+        <div class="sidenav-item" routerLinkActive="active">
+            <button class="terziary">
+                <span class="material-symbols-outlined">
+                    bar_chart
+                </span>
+            </button>
+        </div>
+    </div>
+}
