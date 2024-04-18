@@ -1,0 +1,21 @@
+button{
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+.secondary{
+    background: none;
+    border: solid;
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.terziary{
+    background: none;
+    color: var(--text);
+}
