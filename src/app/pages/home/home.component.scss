@@ -1,0 +1,27 @@
+@media only screen and (min-width: 850px){
+    .homepage-header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    }
+    
+    .item{
+        background-color: var(--bg-lv2);
+        height: 128px;
+        border-radius: 16px;
+    }
+}
+
+@media only screen and (max-width: 849px){
+    .homepage-header{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .item{
+        background-color: var(--bg-lv2);
+        height: 128px;
+        border-radius: 16px;
+    }
+}

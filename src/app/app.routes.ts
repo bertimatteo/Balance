@@ -5,12 +5,13 @@ export const routes: Routes = [
         path: 'app', 
         loadComponent: () => import('./layout/page-layout/page-layout.component'),
         children: [
-         { path: 'balance', loadComponent: () => import('./pages/balance/balance.component')}
+            { path: 'home', loadComponent: () => import('./pages/home/home.component')},
+            { path: 'balance', loadComponent: () => import('./pages/balance/balance.component')}
         ] 
     },
     { 
         path: '', 
-        redirectTo: 'app', 
+        redirectTo: 'app/home', 
         pathMatch: 'full' 
     }
 ];
