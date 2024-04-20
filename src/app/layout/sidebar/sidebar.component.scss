@@ -1,104 +1,276 @@
-@media only screen and (min-width: 850px) {
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) { 
     .sidebar-container{
         background: var(--primary);
-        height: calc(100vh - var(--xl));
-        border-radius: var(--s);
+        height: calc(100dvh - var(--l-xl));
+        border-radius: var(--l-s);
         display: flex;
         flex-direction: column;
     }
-    
+
     .opened{
         width: 250px;
-    
-        .title{
-            text-align: center;
-            font-weight: 700;
-            font-size: 16px;
-            padding-top: var(--lg);
-        }
     
         .sidebar-logo-container{
             display: flex;
             justify-content: center;
     
             .sidebar-logo{
-                margin-top: var(--xl);
-                margin-bottom: var(--md);
+                margin-top: var(--l-xl);
+                margin-bottom: var(--l-md);
                 width: 70%;
-                border-radius: var(--xl);
+                border-radius: var(--l-xl);
             }
         }
     
         .sidebar-items{
             display: flex;
             flex-direction: column;
-            gap: var(--md);
+            gap: var(--l-md);
         }
     
         .sidenav-item{
             display: flex;
             flex-direction: row;
-            padding: var(--md) var(--lg);
-            margin-left: var(--md);
-            margin-right: var(--md);
+            padding: var(--l-md) var(--l-lg);
+            margin-left: var(--l-md);
+            margin-right: var(--l-md);
             align-items: center;
-            gap: 16px;
+            gap: var(--l-md);
             color: var(--text);
-            font-size: 14px;
+            font-size: var(--t-s);
             cursor: pointer;
         }
         
         .sidenav-item:hover, .active{
             background-color: var(--background-hover);
-            border-radius: var(--s);
+            border-radius: var(--l-s);
             color: var(--text-hover);
-            font-size: 16px;
+            font-size: var(--t-md);
         }
     
         .spacer{
             flex-grow: 5;
         }
     }
-    
+
     .closed{
         width: 96px;
     
         .sidebar-items{
             display: flex;
             flex-direction: column;
-            gap: var(--md);
+            gap: var(--l-md);
             align-items: center;
     
             button:hover, button.active{
                 background-color: var(--background-hover);
                 color: var(--text-hover);
-                font-size: 16px;
+                font-size: var(--t-md);
             }
         }
     
         .top{
-            margin-top: var(--md);
-            margin-bottom: var(--xl);
+            margin-top: var(--l-md);
+            margin-bottom: var(--l-xl);
         }
     }
 }
 
-@media only screen and (max-width: 849px) {
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) { 
     .sidebar-container{
         background: var(--primary);
-        height: 64px;
-        border-radius: var(--s);
+        height: calc(100dvh - var(--l-xl));
+        border-radius: var(--l-s);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opened{
+        width: 250px;
+    
+        .sidebar-logo-container{
+            display: flex;
+            justify-content: center;
+    
+            .sidebar-logo{
+                margin-top: var(--l-xl);
+                margin-bottom: var(--l-md);
+                width: 70%;
+                border-radius: var(--l-xl);
+            }
+        }
+    
+        .sidebar-items{
+            display: flex;
+            flex-direction: column;
+            gap: var(--l-md);
+        }
+    
+        .sidenav-item{
+            display: flex;
+            flex-direction: row;
+            padding: var(--l-md) var(--l-lg);
+            margin-left: var(--l-md);
+            margin-right: var(--l-md);
+            align-items: center;
+            gap: var(--l-md);
+            color: var(--text);
+            font-size: var(--t-s);
+            cursor: pointer;
+        }
+        
+        .sidenav-item:hover, .active{
+            background-color: var(--background-hover);
+            border-radius: var(--l-s);
+            color: var(--text-hover);
+            font-size: var(--t-md);
+        }
+    
+        .spacer{
+            flex-grow: 5;
+        }
+    }
+
+    .closed{
+        width: 96px;
+    
+        .sidebar-items{
+            display: flex;
+            flex-direction: column;
+            gap: var(--l-md);
+            align-items: center;
+    
+            button:hover, button.active{
+                background-color: var(--background-hover);
+                color: var(--text-hover);
+                font-size: var(--t-md);
+            }
+        }
+    
+        .top{
+            margin-top: var(--l-md);
+            margin-bottom: var(--l-xl);
+        }
+    }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 850px) and (max-width: 1279px) {
+    .sidebar-container{
+        background: var(--primary);
+        height: calc(100dvh - var(--l-xl));
+        border-radius: var(--l-s);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opened{
+        width: 200px;
+    
+        .sidebar-logo-container{
+            display: flex;
+            justify-content: center;
+    
+            .sidebar-logo{
+                margin-top: var(--l-xl);
+                margin-bottom: var(--l-md);
+                width: 70%;
+                border-radius: var(--l-xl);
+            }
+        }
+    
+        .sidebar-items{
+            display: flex;
+            flex-direction: column;
+            gap: var(--l-md);
+        }
+    
+        .sidenav-item{
+            display: flex;
+            flex-direction: row;
+            padding: var(--l-md) var(--l-lg);
+            margin-left: var(--l-md);
+            margin-right: var(--l-md);
+            align-items: center;
+            gap: var(--l-md);
+            color: var(--text);
+            font-size: var(--t-s);
+            cursor: pointer;
+        }
+        
+        .sidenav-item:hover, .active{
+            background-color: var(--background-hover);
+            border-radius: var(--l-s);
+            color: var(--text-hover);
+        }
+    
+        .spacer{
+            flex-grow: 5;
+        }
+    }
+
+    .closed{
+        width: 96px;
+    
+        .sidebar-items{
+            display: flex;
+            flex-direction: column;
+            gap: var(--l-md);
+            align-items: center;
+    
+            button:hover, button.active{
+                background-color: var(--background-hover);
+                color: var(--text-hover);
+            }
+        }
+    
+        .top{
+            margin-top: var(--l-md);
+            margin-bottom: var(--l-xl);
+        }
+    }
+}
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 850px) { 
+    .sidebar-container{
+        background: var(--primary);
+        height: var(--l-xxl);
+        border-radius: var(--l-s);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: var(--l-s);
+        margin-right: var(--l-s);
     }
 
     button:hover, button.active{
         background-color: var(--background-hover);
         color: var(--text-hover);
-        font-size: 16px;
+        font-size: var(--t-md);
     }
 }
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+    .sidebar-container{
+        background: var(--primary);
+        height: var(--l-xxl);
+        border-radius: var(--l-s);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: var(--l-s);
+        margin-right: var(--l-s);
+    }
+
+    button:hover, button.active{
+        background-color: var(--background-hover);
+        color: var(--text-hover);
+        font-size: var(--t-md);
+    }    
+} 

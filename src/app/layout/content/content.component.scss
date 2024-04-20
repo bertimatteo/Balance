@@ -2,7 +2,7 @@
     .content-container{
         //background-color: var(--bg-lv2);
         height: calc(100dvh - 112px);
-        border-radius: var(--s);
+        border-radius: var(--l-s);
     }
     
     .content-wrapper{
@@ -14,7 +14,7 @@
 @media only screen and (max-width: 849px) {
     .content-container{
         height: calc(100dvh - 192px);
-        border-radius: var(--s);
+        border-radius: var(--l-s);
     }
     
     .content-wrapper{

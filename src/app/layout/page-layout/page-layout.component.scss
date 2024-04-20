@@ -1,10 +1,10 @@
 // Large
 @media only screen and (min-width: 850px) {
     .page-container{
-        padding: var(--md);
+        padding: var(--l-md);
         display: flex;
         flex-direction: row;
-        gap: var(--md);
+        gap: var(--l-md);
     }
     
     .grow{
@@ -15,10 +15,10 @@
 // Small
 @media only screen and (max-width: 849px) {
 	.page-container{
-        padding: var(--md);
+        padding: var(--l-md);
         display: flex;
         flex-direction: column-reverse;
-        gap: var(--md);
+        gap: var(--l-md);
         
     }
     
