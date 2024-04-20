@@ -1,6 +1,5 @@
 .navbar-container{
-    //background-color: var(--bg-lv2);
-    height: 64px;
+    height: var(--l-xxl);
     border-radius: var(--l-s);
     display: flex;
     gap: var(--l-md);
@@ -13,9 +12,9 @@
 }
 
 .avatar{
-    padding: 8px;
+    padding: var(--l-s);
     border-radius: 100px;
-    margin-left: 16px;
+    margin-left: var(--l-md);
     color: var(--text);
     border: solid 2px var(--text);
 }

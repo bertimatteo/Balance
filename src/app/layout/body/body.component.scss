@@ -1,17 +1,49 @@
-@media only screen and (min-width: 850px) {
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) {
     .body-container{
         height: calc(100dvh - var(--l-xl));
         display: grid;
-        grid-template-rows: 64px 1fr;
-        gap: 16px;
+        grid-template-rows: var(--l-xxl) 1fr;
+        gap: var(--l-md);
     }
 }
 
-@media only screen and (max-width: 849px) {
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
     .body-container{
-        height: calc(100dvh - var(--l-xl) - 64px - 16px);
+        height: calc(100dvh - var(--l-xl));
         display: grid;
-        grid-template-rows: 64px 1fr;
-        gap: 16px;
+        grid-template-rows: var(--l-xxl) 1fr;
+        gap: var(--l-md);
+    }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 850px) and (max-width: 1279px) {
+    .body-container{
+        height: calc(100dvh - var(--l-xl));
+        display: grid;
+        grid-template-rows: var(--l-xxl) 1fr;
+        gap: var(--l-md);
+    }
+}
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 850px) {
+    .body-container{
+        height: calc(100dvh - var(--l-xl) - var(--l-xxl) - var(--l-md));
+        display: grid;
+        grid-template-rows: var(--l-xxl) 1fr;
+        gap: var(--l-md);
+    }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+    .body-container{
+        height: calc(100dvh - var(--l-xl) - var(--l-xxl) - var(--l-md));
+        display: grid;
+        grid-template-rows: var(--l-xxl) 1fr;
+        gap: var(--l-md);
     }
 }

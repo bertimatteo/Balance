@@ -1,6 +1,6 @@
-@media only screen and (min-width: 850px) {
+/* Schermi grandi o ad alta risoluzione */
+@media all and (min-width: 1690px) {
     .content-container{
-        //background-color: var(--bg-lv2);
         height: calc(100dvh - 112px);
         border-radius: var(--l-s);
     }
@@ -11,7 +11,47 @@
     }
 }
 
-@media only screen and (max-width: 849px) {
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) {
+    .content-container{
+        height: calc(100dvh - 112px);
+        border-radius: var(--l-s);
+    }
+    
+    .content-wrapper{
+        max-height: 100%;
+        overflow: auto;
+    }
+}
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 850px) and (max-width: 1279px) {
+    .content-container{
+        height: calc(100dvh - 112px);
+        border-radius: var(--l-s);
+    }
+    
+    .content-wrapper{
+        max-height: 100%;
+        overflow: auto;
+    }
+}
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 850px) {
+    .content-container{
+        height: calc(100dvh - 192px);
+        border-radius: var(--l-s);
+    }
+    
+    .content-wrapper{
+        max-height: 100%;
+        overflow: auto;
+    }
+}
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
     .content-container{
         height: calc(100dvh - 192px);
         border-radius: var(--l-s);
